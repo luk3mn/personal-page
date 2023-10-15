@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Passion+One:wght@400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+    color: var(--secondary);
+    text-align: justify;
+}
+
+html {
+    --bg-secondary: #393e74;
+    --bg-third: #5599fa;
+    --bg-primary: #18191b;
+    --block-primary: #232425;
+    --secondary: #eff6fa;
+}
+
+h2 {
+    color: var(--bg-third);
+}
+
+h6 {
+    color: var(--secondary);
+}
+
+body {  
+    height: 100vh;
+    width: 100vw;
+    background-color: #919191;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.container .nav {
+    flex: 0;
+
+    display: flex;
+    justify-content: right;
+
+    background-color: var(--bg-secondary);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.container .nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+}
+
+.container .nav ul :hover {
+    color: var(--bg-third);
+    cursor: pointer;
+    background-color: var(--bg-primary);
+    height: 100%;
+}
+
+.container .nav ul li {
+    display: inline-block;
+    font-size: 80%;
+    /* border: 1px solid red; */
+    padding: .6rem .3rem;
+}
+
+.container .box-profile {
+    height: 0px;
+    width: 0;
+}
+
+.container .box-profile .profile {
+    width: 100px;
+    height: 100px;
+    border-radius: 4em;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    position: relative;
+    bottom: 10px;
+    left: 20px;
+    border: 2px solid var(--secondary);
+}
+
+.container .box-profile .profile img {
+    width: 100px;
+    position: relative;
+    bottom: 30px;
+}
+
+.container .box-profile .social {
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 10px;
+    left: 70px;
+}
+
+.container .box-profile .social a .fa-brands {
+    margin: .5rem;
+    font-size: 20px;
+}
+
+.container .content {
+    flex: 1;
+    width: 100%;
+}
+
+.container .content .block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    background-color: var(--bg-primary);
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(245, 24, 215);
+    padding: 2em;
+}
+
+/* .container .content .block span {
+    color: var(--bg-third);
+} */
+
+.container .content .box-about div h1 span {
+    /* border: 1px solid red; */
+    /* display: none; */
+    /* font-size: 2rem; */
+    color: var(--bg-third);
+}
+
+.container .content .box-resume {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.container .content .box-resume .content-resume {
+    padding: .3em;
+    background-color: var(--block-primary);
+    border-radius: .5em;
+    /* font-size: 1rem; */
+    width: 100%;
+    margin: .5rem;
+    padding: .5rem;
+    
+    border: 2px solid rgb(245, 24, 215);
+    /* border: 1px solid red; */
+}
+
+/* .container .content .box-resume .content-resume h2 {
+    color: var(--bg-third);
+} */
+
+.container .content .box-resume .content-resume .details div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin: .3em; */
+
+    /* border: 1px solid red; */
+}
+
+.container .content .box-resume .content-resume .details h6,
+.container .content .box-resume .content-resume .details span {
+    /* display: flex;
+    margin: .5em; */
+    font-size: .7rem;
+    /* border: 1px solid rgb(245, 24, 215); */
+    text-align: left;
+    /* width: 100%; */
+}
+
+.container .content .box-resume .content-resume .details span {
+    width: 30%;
+    /* font-weight: 500; */
+    color: var(--secondary);
+    text-align: center;
+}
+
+.container .content .box-resume .content-resume .description {
+    /* width: 30%;
+    font-weight: 700;
+    color: var(--secondary); */
+    /* border: 1px solid rgb(245, 24, 215); */
+    margin-top: .5rem;
+
+}
+
+.container .content .box-resume .content-resume .description ul {
+    /* list-style: none; */
+    font-size: .7rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.container .content .hidden {
+    display: none;
+}
+
+.container .content .btn-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 2px solid red; */
+    background-color: var(--bg-third);
+    border-radius: 2em;
+    margin-top: 1em;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+.container .box-download a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    background-color: var(--bg-third);
+
+    width: 200px;
+    height: 50px;
+    border-radius: 2em 0 0 2em;
+
+    margin-bottom: 20px;
+}
+
+.container .box-download img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.container .box-download {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 810px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container .content {
+        flex: 6;
+    }
+
+    .container .nav {
+        flex:2;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .container .nav ul {
+        display: flex;
+        flex-direction: column;
+
+        border: 1px solid red;
+        width: 100%;
+    }
+
+    .container .nav ul li {
+        display: block;
+        text-align: left;
+        font-size: 2em;
+        font-weight: 700;
+        width: 100%;
+    }
+
+    .container .box-profile {
+        position: relative;
+        left: 0;
+        top: 0;
+
+        width: 0px;
+    }
+
+    .container .box-profile .profile {
+        position: relative;
+        top: 50px;
+        left: -70px;
+
+        width: 150px;
+        height: 150px;
+        border-radius: 5em;
+    }
+
+    .container .box-profile .profile img {
+        width: 160px;
+        bottom: 60px;
+    }
+
+    .container .box-profile .social {
+        display: flex;
+        justify-content: center;
+    
+        position: relative;
+        top: 60px;
+        left: 0px;
+    }
+
+    .container .box-download a {
+        top: 0;
+        margin-top: 20px;
+    }
+
+    .container .content .box-resume {
+        display: flex;
+        flex-direction: row;
+    
+        align-items: center;
+    }
+    
+    .container .content .box-resume .content-resume {   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        border: 2px solid rgb(245, 24, 215);
+        min-height: 250px;
+    }
+
+
+    
+    .container .content .hidden {
+        display: none;
+    }
+}
