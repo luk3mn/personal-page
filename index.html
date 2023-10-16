@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucas Renan Maués Nunes</title>
     <!-- <link rel="stylesheet" href="style/style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/modal.css">
 </head>
 <body>
     <div class="container">
@@ -30,7 +32,7 @@
             </div>
         </div>
         <main class="content">
-            <div class="block box-about">
+            <div class="block box-about hidden">
                 <div>
                     <h1>LUCAS R.<br/><span>MAUÉS NUNES</span></h1>
                     <p>Hello, I am Lucas, I'm 25 and I graduated with a degree in Software Analysis and Development from UEPA (State University of Pará)</p>
@@ -80,8 +82,148 @@
                 </div>
 
             </div>
-            <div class="block box-skills hidden">
-                <h1>My skills</h1>
+            <div class="block box-skills">
+                <div class="content-skills">
+                    <h4>Languages</h4>
+                    <div class="languages">
+                        <div>English (Intermediate)</div>
+                    </div>
+                </div>
+                <div class="content-skills">
+                    <h4>Hard Skills</h4>
+                    <div class="hard-skills">
+                        <div class="skill">
+                            <i class="devicon-java-plain"></i>
+                            <div>
+                                <p>20%</p>
+                                <p>Java</p>
+                            </div>
+                            <i class="fa-solid fa-plus fa-fade" id="plus-skill-java"></i>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-javascript-plain"></i>
+                            <div>
+                                <p>60%</p>
+                                <p>JS</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                           <i class="devicon-python-plain"></i>
+                            <div>
+                                <p>50%</p>
+                                <p>Python</p>
+                            </div>
+                            <i class="fa-solid fa-plus fa-fade" id="plus-skill-py"></i>
+                        </div>
+                        <div class="skill">
+                            <i class="fa-brands fa-aws"></i>
+                            <!-- <i class="devicon-amazonwebservices-original"></i> -->
+                            <div>
+                                <p>40%</p>
+                                <p>AWS</p>
+                            </div>
+                            <i class="fa-solid fa-plus fa-fade" id="plus-skill-aws"></i>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-git-plain"></i>
+                            <div>
+                                <p>70%</p>
+                                <p>Git</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-php-plain"></i>
+                            <div>
+                                <p>20%</p>
+                                <p>PHP</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-postgresql-plain"></i>
+                            <div>
+                                <p>50%</p>
+                                <p>PostgreSQL</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-mysql-plain"></i>
+                            <div>
+                                <p>50%</p>
+                                <p>MySQL</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-microsoftsqlserver-plain"></i>
+                            <div>
+                                <p>50%</p>
+                                <p>SQLServer</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-linux-plain"></i>
+                            <div>
+                                <p>45%</p>
+                                <p>Linux</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-docker-plain"></i>
+                            <div>
+                                <p>40%</p>
+                                <p>Docker</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-html5-plain"></i>
+                            <div>
+                                <p>80%</p>
+                                <p>HTML5</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-css3-plain"></i>
+                            <div>
+                                <p>70%</p>
+                                <p>CSS3</p>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <i class="devicon-terraform-plain"></i>
+                            <div>
+                                <p>10%</p>
+                                <p>Terraform</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Java model window -->
+                    <div class="modal-skills java-skill hidden">
+                        <i class="fa-solid fa-minus fa-beat-fade" id="minus-java"></i>
+                        <div class="modal-box">
+                            <i class="devicon-spring-plain-wordmark"></i>  
+                        </div>
+                    </div>
+                    <!-- Python modal window -->
+                    <div class="modal-skills py-skill hidden"> <!-- ADD 'HIDDEN HERE' -->
+                        <i class="fa-solid fa-minus fa-beat-fade" id="minus-py"></i>
+                        <div class="modal-box">
+                            <i class="devicon-django-plain-wordmark"></i>
+                            <i class="devicon-flask-original-wordmark"></i>
+                            <i class="devicon-pandas-original-wordmark"></i>
+                            <i class="devicon-sqlalchemy-original-wordmark"></i>
+                        </div>
+                    </div>
+                    <!-- AWS modal window -->
+                    <div class="modal-skills aws-skill hidden">
+                        <i class="fa-solid fa-minus fa-beat-fade" id="minus-aws"></i>
+                        <div class="modal-box">
+                            <i class="devicon-ssh-original-wordmark"></i>
+                            <li>EC2</li>
+                            <li>DynamoDB</li>
+                            <li>RDS</li>
+                            <li>S3</li>  
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="block box-portfolio hidden">
                 <h1>Portifolio</h1>
@@ -103,6 +245,7 @@
         </div>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     <script src="https://kit.fontawesome.com/01edd83a56.js" crossorigin="anonymous"></script>
 </body>
 </html>
