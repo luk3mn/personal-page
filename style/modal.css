@@ -20,7 +20,8 @@ html {
     width: 200px;
 }
 
-.box-skills .content-skills .modal-skills .modal-box i {
+.box-skills .content-skills .modal-skills .modal-box i,
+.box-skills .content-skills .modal-skills .modal-box li {
     /* border: 1px solid var(--bg-third); */
     border-bottom: 2px solid var(--bg-third);
     border-right: 2px solid var(--bg-third);
@@ -30,6 +31,14 @@ html {
     border-radius: 3rem;
     margin: .4rem 0;
     box-shadow: #eff6fa;
+}
+
+.box-skills .content-skills .modal-skills .modal-box li {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 700;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .box-skills .content-skills .modal-skills .fa-minus {

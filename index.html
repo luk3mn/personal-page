@@ -31,7 +31,7 @@
             </div>
         </div>
         <main class="content">
-            <div class="block box-about hidden">
+            <div class="block box-about">
                 <div>
                     <h1>LUCAS R.<br/><span>MAUÉS NUNES</span></h1>
                     <p>Hello, I am Lucas, I'm 25 and I graduated with a degree in Software Analysis and Development from UEPA (State University of Pará)</p>
@@ -399,7 +399,7 @@
                 </scroll-container>
             </div>
 
-            <div class="block box-certifications ">
+            <div class="block box-certifications hidden">
                 <h2>Certifications</h2>
                 <scroll-container class="content-certifications">
                     <div class="certifications">
@@ -415,7 +415,18 @@
                 </scroll-container>
             </div>
             <div class="block box-contact hidden">
-                <h1>My contact</h1>
+                <h2>Contact me</h2>
+                <div class="content-contact">
+                    <form action="https://formspree.io/f/mqkvnkgb" method="POST">
+                        <div class="fields">
+                            <input type="email" name="email" placeholder="Your e-mail">
+                            <input type="text" name="name" placeholder="Your name">
+                            <input type="text" name="subject" placeholder="Subject">
+                        </div>
+                        <textarea name="message" placeholder="Place your message here"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
             </div>
         </main>
         <div class="box-download">
