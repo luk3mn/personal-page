@@ -278,7 +278,6 @@ scroll-container::-webkit-scrollbar {
     width: .3rem; /* width of the entire scrollbar */
 }
   
-  
 scroll-container::-webkit-scrollbar-thumb {
     background-color: var(--bg-third); /* color of the scroll thumb */
     border-radius: 1rem 0 1rem 0; /* roundness of the scroll thumb */
@@ -319,6 +318,59 @@ scroll-container::-webkit-scrollbar-thumb {
 .container .content .box-portfolio .content-portfolio .project .project-details div {
     font-size: .8rem;
     margin-left: .9rem;
+}
+
+/* =========================== */
+/* == CERTIFICATIONS SCREEN == */
+/* =========================== */
+.container .content .box-certifications {
+    display: flex;
+    align-items: center;
+}
+
+.container .content .box-certifications .content-certifications {
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.container .content .box-certifications .content-certifications .certifications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    background-color: var(--block-primary);
+    padding: 1rem;
+    margin: 0 1rem 2rem 1rem;
+}
+
+.container .content .box-certifications .content-certifications .certifications p {
+    text-align: justify;
+    font-size: .8rem;
+}
+
+.container .content .box-certifications .content-certifications .certifications .certifications-scope {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    margin-bottom: .5rem;
+    /* font-size: .5rem; */
+}
+
+.container .content .box-certifications .content-certifications .certifications .certifications-scope h5 {
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.container .content .box-certifications .content-certifications .certifications .certifications-scope img {
+    width: 65px;
+}
+
+.container .content .box-certifications .content-certifications .certifications .certifications-scope a i {
+    cursor: pointer;
 }
 
 .container .content .hidden {
@@ -525,6 +577,20 @@ scroll-container::-webkit-scrollbar-thumb {
         flex-wrap: wrap;
     }
 
+    .container .content .box-certifications .content-certifications {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container .content .box-certifications .content-certifications .certifications {
+        margin: 2rem 1rem;
+        width: 530px;
+    }
+    
+    .container .content .box-certifications .content-certifications .certifications div h5, 
+    .container .content .box-certifications .content-certifications .certifications p {
+        font-size: 1.1rem;
+    }
 
     .container .content .hidden {
         display: none;
