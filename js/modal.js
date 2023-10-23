@@ -30,3 +30,12 @@ document.querySelector('#minus-aws').addEventListener('click', () => {
     document.querySelector('.hard-skills').classList.remove('hidden');
     document.querySelector('.aws-skill').classList.add('hidden');
 })
+
+// Button to expand publication on mobile
+document.querySelector('#btn-open-pub').addEventListener('click', () => {
+    document.querySelector('.container .content .box-resume .content-resume .resume .resume-publication').classList.remove('hidden-pub')
+})
+
+document.querySelector('#btn-close-pub').addEventListener('click', () => {
+    document.querySelector('.container .content .box-resume .content-resume .resume .resume-publication').classList.add('hidden-pub')
+})

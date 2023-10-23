@@ -83,8 +83,8 @@ body {
 }
 
 .container .box-profile .profile {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 4em;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -96,7 +96,7 @@ body {
 }
 
 .container .box-profile .profile img {
-    width: 100px;
+    width: 80px;
     position: relative;
     bottom: 30px;
 }
@@ -107,7 +107,7 @@ body {
 
     position: relative;
     bottom: 10px;
-    left: 70px;
+    left: 60px;
 }
 
 .container .box-profile .social a .fa-brands {
@@ -130,7 +130,7 @@ body {
     width: 100%;
     height: 100%;
     /* border: 2px solid rgb(245, 24, 215); */
-    padding: 2em;
+    padding: 1.7em;
 }
 
 .container .content .box-about div h1 span {
@@ -149,48 +149,77 @@ body {
 }
 
 .container .content .box-resume .content-resume {
-    padding: .3em;
-    background-color: var(--block-primary);
-    border-radius: .5em;
-    width: 100%;
-    margin: .5rem;
-    padding: .8rem;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     /* border: 2px solid rgb(245, 24, 215); */
+    padding: .5rem;
 }
 
-.container .content .box-resume .content-resume .experience {
-    margin: 1.3rem 0;
+.container .content .box-resume .content-resume .resume  {
+    /* border: 2px solid rgb(245, 24, 215); */
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: .5em;
 }
 
-.container .content .box-resume .content-resume .details div {
+.container .content .box-resume .content-resume .resume:nth-child(1) {
+    padding: 1rem;
+    background-color: var(--block-primary);
+}
+
+.container .content .box-resume .content-resume .resume span, 
+.container .content .box-resume .content-resume .resume li {
+    font-size: .8rem;
+    list-style: circle;
+    margin-left: 1rem;
+
+}
+
+.container .content .box-resume .content-resume .resume .resume-experience .experience .exp-header div,
+.container .content .box-resume .content-resume .resume .resume-education .education .edu-header div {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.container .content .box-resume .content-resume .details h6,
-.container .content .box-resume .content-resume .details span {
-    font-size: .7rem;
-    /* border: 1px solid rgb(245, 24, 215); */
-    text-align: left;
-}
-
-.container .content .box-resume .content-resume .details span {
-    width: 30%;
-    color: var(--secondary);
-    text-align: center;
-}
-
-.container .content .box-resume .content-resume .description {
+.container .content .box-resume .content-resume .resume .exp-details, .resume .edu-details {
+    /* border: 1px solid white; */
     margin-top: .5rem;
-
 }
 
-.container .content .box-resume .content-resume .description ul {
-    font-size: .7rem;
-    padding: 0 1rem;
+.container .content .box-resume .content-resume .resume .resume-education,
+.container .content .box-resume .content-resume .resume .resume-publication {
+    padding: 1rem;
+    background-color: var(--block-primary);
+    border-radius: .5rem;
+}
+
+.container .content .box-resume .content-resume .resume .resume-publication .pub-box .publication {
+    padding: 1rem 0;
+}
+
+.container .content .box-resume .content-resume .resume .resume-publication .pub-box .publication .pub-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    margin: .5rem 0;
+}
+
+.container .content .box-resume .content-resume .resume .resume-publication .pub-box .publication .verify {
+    width: 100%;
     text-align: center;
+    padding: 1.3rem 0;
+}
+
+.container .content .box-resume .content-resume .resume .resume-publication .pub-box .publication .verify a .fa-certificate {
+    background-color: var(--secondary);
+    border-radius: .5rem;
+    padding: .5rem;
+    margin: 1rem;
+    color: var(--block-primary);
 }
 
 /* =================== */
@@ -461,7 +490,7 @@ scroll-container::-webkit-scrollbar-thumb {
     justify-content: center;
     align-items: center;
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: 0;
 
@@ -485,7 +514,7 @@ scroll-container::-webkit-scrollbar-thumb {
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 912px) {
+@media screen and (min-width: 1024px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -560,35 +589,58 @@ scroll-container::-webkit-scrollbar-thumb {
         align-items: center;
     }
     
-
+    
     .container .content .box-resume .content-resume {
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
+        flex-direction: row;
     }
-
-    .container .content .box-resume .content-resume .details h6,
-    .container .content .box-resume .content-resume .details span {
-        font-size: 1rem;
+    
+    .container .content .box-resume .content-resume .resume {
+        height: 500px;
+        margin: .5rem;
+        overflow-y: scroll;
     }
-
-    .container .content .box-resume .content-resume .details span {
-        width: 30%;
-    }
-
-    .container .content .box-resume .content-resume .description > ul, h6 {
-        font-size: 1rem;
-    }
-
-    .container .content .box-resume .content-resume {   
+    
+    .container .content .box-resume .content-resume .resume:nth-child(2) {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-
         /* border: 2px solid rgb(245, 24, 215); */
-        min-height: 250px;
+    }
+
+    .container .content .box-resume .content-resume .resume .resume-education,
+    .container .content .box-resume .content-resume .resume .resume-publication {
+        flex: 1;
+    }
+
+    .container .content .box-resume .content-resume .resume .resume-education {
+        margin-bottom: 1rem;
+    }
+
+    .container .content .box-resume .content-resume .resume span, 
+    .container .content .box-resume .content-resume .resume li {
+        font-size: 1rem;
+        list-style: circle;
+        margin-left: 1rem;
+    }
+
+    .container .content .box-resume .content-resume .resume h5 {
+        font-size: 1rem;
+    }
+
+    .container .content .box-resume .content-resume .resume h6 {
+        font-size: .7rem;
     }
 
     .container .content .box-skills .content-skills .languages {
         font-size: 1.2em;
+    }
+
+    .container .content .box-resume .content-resume .resume .expand-publications {
+        display: none;
+    }
+
+    .container .content .box-resume .content-resume .resume .resume-publication .close-pub i {
+        display: none;
     }
 
     .container .content .box-skills .content-skills .hard-skills .skill {
@@ -660,11 +712,5 @@ scroll-container::-webkit-scrollbar-thumb {
 
     .container .content .hidden {
         display: none;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .container .content .box-skills {
-        padding-top: 120px;
     }
 }

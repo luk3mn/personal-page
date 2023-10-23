@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/dev.ico" type="image/x-icon">
     <title>Lucas Renan Maués Nunes</title>
     <!-- <link rel="stylesheet" href="style/style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
@@ -43,43 +44,76 @@
 
             <div class="block box-resume hidden">
                 <div class="content-resume">
-                    <h2>Education</h2>
-                    <div class="details">
-                        <div>
-                            <h6>Software Analysis and Development</h6>
-                            <span>2019-2023</span>
-                        </div>
-                        <span>State University of Pará</span>
-                    </div>
-                    <div class="description">
-                        <h6>Tasks</h6>
-                        <ul>
-                            <li>Publishing of my final project</li>
-                            <li>Honors Degree as second in class</li>
-                            <li>Project development in several programming languages</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="content-resume">
-                    <h2>Experiences</h2>
-                    <div class="experience">
-                        <div class="details">
-                            <div>
-                                <h6>Infraestrutucte Intern</h6>
-                                <span>2022-2023</span>
+                    <scroll-container class="resume">
+                        <h4>Experience</h4>
+                        <div class="resume-experience">
+                            <div class="experience">
+                                <div class="exp-header">
+                                    <div>
+                                        <h5>Infraestrutucte Intern</h5>
+                                        <span>2022-2023</span>
+                                    </div>
+                                    <h6>Petruz Fruity</h6>
+                                </div>
+                                <div class="exp-details">
+                                    <h5>Details</h5>
+                                    <ul>
+                                        <li>Identify problems and fix them</li>
+                                        <li>Understanding user's challenges</li>
+                                        <li>Create solutions to solve technical problems</li>
+                                        <li>Writing technical documentation</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <span>Petruz Fruity</span>
                         </div>
-                        <div class="description">
-                            <h6>Tasks</h6>
-                            <ul>
-                                <li>Identify problems and fix them</li>
-                                <li>Understanding user's challenges</li>
-                                <li>Create solutions to solve technical problems</li>
-                                <li>Writing technical documentation</li>
-                            </ul>
+                    </scroll-container>
+                    <scroll-container class="resume">
+                        <div class="resume-education">
+                            <h4>Education</h4>
+                            <div class="education">
+                                <div class="edu-header">
+                                    <div>
+                                        <h5>Software Analysis and Development</h5>
+                                        <span>2019-2023</span>
+                                    </div>
+                                    <h6>State University of Pará</h6>
+                                </div>
+                                <div class="edu-details">
+                                    <h5>Details</h5>
+                                    <ul>
+                                        <li>Publishing of my final project</li>
+                                        <li>Honors Degree as second in class</li>
+                                        <li>Project development in several programming languages</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <div class="expand-publications" id="btn-open-pub">
+                            <i class="fa-regular fa-maximize"></i>
+                            <p>Publications</p>
+                        </div>
+                        <div class="resume-publication hidden-pub">
+                            <h4>Publications</h4>
+                            <div class="close-pub">
+                                <i class="fa-solid fa-xmark fa-beat" id="btn-close-pub">X</i>
+                            </div>
+                            <!-- <i>CLOSE</i> -->
+                            <div class="pub-box">
+                                <div class="publication">
+                                    <div class="pub-header">
+                                        <h5>Use of ARIMA and SVM for forecasting time series of the Brazilian electrical system</h5>
+                                        <span>25/02/2023</span>
+                                    </div>
+                                    <h6>Data and Artificial Intelligence</h6>
+                                    <div class="verify">
+                                        <a href="https://rsdjournal.org/index.php/rsd/article/view/40438" target="_blank">
+                                            <i class="fa-solid fa-certificate">Verify</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </scroll-container>
                 </div>
             </div>
 
@@ -230,6 +264,25 @@
             <div class="block box-portfolio hidden">
                 <h2>My Portifolio</h2>
                 <scroll-container class="content-portfolio">
+                    <div class="project">
+                        <div class="project-scope">
+                            <img src="img/food-menu.jpg" alt="food-menu">
+                            <a href="https://github.com/luk3mn/menu-food" target="_blank">
+                                <i class="fa-brands fa-square-github fa-beat-fade"></i>
+                            </a>
+                            <!-- <a href="#" target="_blank">
+                                <i class="fa-solid fa-circle-play fa-beat-fade"></i>
+                            </a> -->
+                        </div>
+                        <div class="project-details">
+                            <h5>Food Menu</h5>
+                            <div>
+                                <img src="https://img.shields.io/badge/Java-18191b?style=flat-square&logo=openjdk&logoColor=ffffff" alt="Java">
+                                <img src="https://img.shields.io/badge/Spring-18191b?style=flat-square&logo=spring&logoColor=ffffff" alt="Spring">
+                                <img src="https://img.shields.io/badge/PostgreSQL-18191b?style=flat-square&logo=postgresql&logoColor=ffffff" alt="PostgreSQL">
+                            </div>
+                        </div>
+                    </div>
                     <div class="project">
                         <div class="project-scope">
                             <img src="img/spotify-top-tracks.jpg" alt="spotify-top-tracks">
@@ -430,7 +483,7 @@
             </div>
         </main>
         <div class="box-download">
-            <a href="https://rxresu.me/r/7_tCMHQ1" target="_blank">
+            <a href="https://rxresu.me/lucasnunes2030/english-dev--lucas-" target="_blank">
                 <span>Download CV</span>
                 <img src="/img/download.svg" alt="">
             </a>

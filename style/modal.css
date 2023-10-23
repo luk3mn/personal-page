@@ -64,3 +64,70 @@ html {
         margin: 1rem 2rem;
     }
 }
+
+@media screen and (max-width: 1023px) {
+
+    .container .content .box-resume .content-resume .resume:nth-child(2)  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .content .box-resume .content-resume .resume .resume-publication {
+        position: absolute;
+        opacity: 0.9;
+        background-color: var(--bg-primary);
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .hidden-pub {
+        display: none;
+    }
+
+    .container .content .box-resume .content-resume .resume .expand-publications {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--block-primary);
+        padding: .4rem;
+        margin: .5rem 1rem 0 1rem;
+        border: 1px solid var(--bg-third);
+        border-radius: 2rem;
+        cursor: pointer;
+        width: 200px;
+    }
+
+    .container .content .box-resume .content-resume .resume .expand-publications i {        
+        color: var(--bg-third);
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    .container .content .box-resume .content-resume .resume .expand-publications p {
+        text-transform: uppercase;
+        margin: 0 .3rem;
+    }
+    
+    .container .content .box-resume .content-resume .resume .resume-publication .pub-box .publication {
+        border: 2px solid var(--secondary);
+        padding: 1.5rem;
+        margin: 20% 10%;
+        background-color: var(--block-primary);
+    }
+
+    .container .content .box-resume .content-resume .resume .resume-publication .pub-box .publication .pub-header {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .container .content .box-resume .content-resume .resume .resume-publication .close-pub i {
+        float: right;
+        margin: 1rem;
+        font-size: 1.5rem;
+    }
+}
